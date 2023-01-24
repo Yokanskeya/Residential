@@ -1,0 +1,363 @@
+
+<!-- LANDING PAGE INI GUE GA PAKE BOOSTRAP SOALNYA BOOSTRAP JELEK DATAR BANGET
+KLO LU PASANG BOOSTRAP DARK MODE NYA HARUS DI ATUR ULANG, KLO MAO DI ADMIN 
+PANELNYA AJA NANTI LU PAKEIN BOOSTRAP. KLO LU MO UBAH JADI PHP INI JUGA UDAH BISA -->
+
+<!-- ALERT PESANAN TERKIRIM ATAU NGGANYA BLOM GUE SET, BISALAH SI IQSAL KLO GITUAN MAH
+TAPI JANGAN PAKE BOOSTRAP -->
+
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="assets/img/favic.ico" type="image/ico">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        
+
+    <title>Ashoka View</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Ashoka View</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#discover" class="nav__link">Discover</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#penawaran" class="nav__link">Offer</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__dark">
+                        <!-- Tombol Dark Mode -->
+                        <span class="change-theme-name">Dark / Light Mode</span>
+                        <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    </div>
+
+                    <i class="ri-close-line nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <img src="assets/img/banner1.jpg" alt="" class="home__img">
+
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__data-subtitle">Hunian Ekslusif</span>
+                        <h1 class="home__data-title">Temukan <b>Hunian <br> Paling Menarik</b></h1>
+                        <a href="#about" class="button">Explore</a>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank" class="home__social-link">
+                            <i class="ri-youtube-line"></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=6285887940651&text=Hallo, Saya ingin mengetahui lebih lanjut mengenai Ashoka View." target="_blank" class="home__social-link">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <span class="home__info-title">5 tempat hunian terbaik</span>
+                            <a href="#discover" class="button button--flex button--link home__info-button">
+                                More <i class="ri-arrow-right-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="home__info-overlay">
+                            <img src="assets/img/home2.jpg" alt="" class="home__info-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">Informasi lanjut <br> Tentang Ashoka View</h2>
+                        <p class="about__description">Ashoka View menghadirkan hunian elegan yang dikembangkan 
+                            dengan cermat sehingga dapat menawarkan kualitas di setiap aspek kehidupan. Menghadirkan 
+                            rumah sebagai teman setia untuk tumbuh bersama, setiap ruang dirancang untuk melayani 
+                            kebutuhan dan keinginan para penghuni.
+                        </p>
+                        <a href="#discover" class="button">Lihat Selengkapnya</a>
+                    </div>
+
+                    <div class="about__img">
+                        <div class="about__img-overlay">
+                            <img src="assets/img/filia.jpg" alt="" class="about__img-one">
+                        </div>
+
+                        <div class="about__img-overlay">
+                            <img src="assets/img/besançon_special.jpg" alt="" class="about__img-two">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!--==================== DISCOVER ====================-->
+            <section class="discover section" id="discover">
+                <h2 class="section__title">Temukan Hunian <br> Paling Menarik</h2>
+                <p class="video__description">Scroll kesamping untuk melihat penawaran</p>
+                <div class="discover__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!--==================== DISCOVER 1 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/bacilio.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Bacilio</h2>
+                                <span class="discover__description">LT 84 m² | LB 89 m²</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 2 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/besançon_special.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Besançon Special</h2>
+                                <span class="discover__description">LT 84 m² | LB 84 m²</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 3 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/filia.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Filia</h2>
+                                <span class="discover__description">LT 170 m² | LB 138 m²</span>
+                            </div>
+                        </div>
+
+                        <!--==================== DISCOVER 4 ====================-->
+                        <div class="discover__card swiper-slide">
+                            <img src="assets/img/gavril.jpg" alt="" class="discover__img">
+                            <div class="discover__data">
+                                <h2 class="discover__title">Gavril</h2>
+                                <span class="discover__description">LT 104 m² | LB 124 m²</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== VIDEO ====================-->
+            <section class="video section">
+                <h2 class="section__title">Interior Tour</h2>
+
+                <div class="video__container container">
+                    <p class="video__description">Cari tahu lebih lanjut dengan video singkat kami 
+                        tentang desain interior indah dan moderen untuk Anda dan keluarga.
+                    </p>
+
+                    <div class="video__content">
+                        <video id="video-file">
+                            <source src="assets/video/video123.mp4" type="video/mp4">
+                        </video>
+
+                        <button class="button button--flex video__button" id="video-button">
+                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+                <!--==================== GOOGLE MAPS====================-->
+                <section class="subscribe section" id="googlemap">
+                    <div class="subscribe__bg">
+                        <div class="subscribe__container container">
+                            <h2 class="section__title subscribe__title">Temukan lokasi Ashoka View<br> Dengan Google Maps</h2>
+                            <div class="section__title">
+                                <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Ashoka%20View&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;height:400px;width:100%}</style><a href="https://www.embedgooglemap.net">inserting google maps</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            <!--==================== OFFER ====================-->
+            <section class="subscribe section1" id="penawaran">
+                <div class="subscribe__bg">
+                    <div class="subscribe__container container">
+                        <h2 class="section__title subscribe__title">Dapatkan Penawaran Ekslusif<br> Untuk Unit Pilihan Anda</h2>
+                            <form name="Penawaran">
+
+                        <!-- NAMA -->
+                        <div class="subscribe__form">
+                            <input id="name" name="Nama" type="text" class="subscribe__input" placeholder="Nama Lengkap Anda" required="">
+                        </div>
+                        <br>
+
+                        <!-- EMAIL -->
+                        
+                        <div class="subscribe__form">
+                            <input id="email" name="Email" type="email" class="subscribe__input" placeholder="Alamat Email Anda" required="">
+                        </div>
+                        <br>
+
+                        <!-- NOMOR HP -->
+                        <div class="subscribe__form">
+                            <input id="phone_number" name="Telp" type="tel" class="subscribe__input" placeholder="Nomor Telepon Anda" required="">
+                        </div>
+                        <br>
+
+                        <!-- OPSI PILIHAN -->
+                        <div class="subscribe__form">
+                        <select
+                        id="attr_1"
+                        name="Tipe"
+                        class="subscribe__form"
+                        required="">
+                        <option value="">Pilih tipe unit Anda</option>
+                        <option value="Bacilio (LT 84 m²,  LB 89 m²)">Bacilio (LT 84 m², LB 89 m²)</option>
+                        <option value="Besançon (LT 84 m², LB 84 m²)">Besançon (LT 84 m², LB 84 m²)</option>
+                        <option value="Filia (LT 170 m², LB 138 m²)">Filia (LT 170 m², LB 138 m²)</option>
+                        <option value="Gavril (LT 104 m², LB 124 m²)">Gavril (LT 104 m², LB 124 m²)</option>
+                        <option value="Hara (LT 114 m², LB 132 m²)">Hara (LT 114 m², LB 132 m²)</option>
+                      </select>
+                    </select>
+                    <input id="attr_2" name="attr_2" type="hidden" class="hidden" value="">
+                    <input id="attr_3" name="attr_3" type="hidden" class="hidden" value="">
+                    <input id="attr_4" name="attr_4" type="hidden" class="hidden" value="">
+                    <input id="attr_5" name="attr_5" type="hidden" class="hidden" value="">
+                    <input id="channel_id" name="channel_id" type="hidden" class="hidden" value="12507">                  
+                    </div>
+                        <br>
+                            <div class="section__title">
+                                <button class="button" type="submit">
+                                    Pesan
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        
+            
+            <!--==================== Present ====================-->
+            <section class="sponsor section">
+                <h2 class="section__title">Presented By</h2>
+                <div class="sponsor__container container grid">
+                    <div class="sponsor__content">
+                        <img src="assets/img/footer.png" alt="" class="sponsor__img">
+                    </div>
+                </div>
+            </section>
+            <p class="video__description">Jl. Intan 1, Cidokom, Kec. Gn. Sindur,  Kabupaten Bogor, Jawa Barat 16340
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                    <div class="footer__data">
+                        <h3 class="footer__title">Ashoka View</h3>
+                        <p class="footer__description">Temukan hunian <br> paling menarik.
+                        </p>
+                        <div>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                                <i class="ri-youtube-line"></i>
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=6285887940651&text=Hallo, Saya ingin mengetahui lebih lanjut mengenai Ashoka View." target="_blank" class="footer__social">
+                                <i class="ri-whatsapp-line"></i>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="footer__data">
+                        <ul>
+                            <div class ="footer__description">About Us</div>
+                            <li class="footer__item">
+                                <a href="#about" class="footer__link">About</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#discover" class="footer__link">Discover</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#penawaran" class="footer__link">Offer</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__data">
+                        <ul>
+                            <div class ="footer__description">Contact</div>
+                                <li class="footer__item">
+                            <a href="https://api.whatsapp.com/send?phone=6285887940651&text=Hallo, Saya ingin mengetahui lebih lanjut mengenai Ashoka View." target="_blank" class="footer__link">WhatsApp</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2022 Adamkaisa. All rigths reserved.</p>
+                    <div class="footer__terms">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        
+
+         <!--========== SCROLL UP ==========-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line scrollup__icon"></i>
+        </a>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <!--=============== FORM ===============-->
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwUzOXMeFc-y1fA_9FuTXT5SrHHXeTMnadJuEPqTPJX88tEsLWqey_h4CVVM8DYaQhH/exec'
+            const form = document.forms['Penawaran']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
